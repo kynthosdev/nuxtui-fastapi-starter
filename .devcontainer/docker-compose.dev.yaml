@@ -1,6 +1,9 @@
 services:
   app:
-    image: "mcr.microsoft.com/devcontainers/base:noble"
+    # image: "mcr.microsoft.com/devcontainers/base:noble"
+    build:
+      context: .
+      dockerfile: ../docker/Dockerfile.frontend
     volumes:
       # Mounts your local project folder to /workspace in the container
       - ../..:/workspaces:cached

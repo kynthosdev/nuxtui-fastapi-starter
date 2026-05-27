@@ -18,7 +18,7 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.enable": false,
         "editor.formatOnSave": true,
         "[typescript, javascript, vue]": {
           "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -105,7 +105,7 @@
   ],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "chmod +x ./.devcontainer/post-create-setup.sh && ./.devcontainer/post-create-setup.sh"
+  "postCreateCommand": "chmod +x ./.devcontainer/post-create-setup.sh && ./.devcontainer/post-create-setup.sh && npm install -g eslint"
 
   // Configure tool-specific properties.
   // "customizations": {},
