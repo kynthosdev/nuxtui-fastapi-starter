@@ -101,7 +101,7 @@
 
   // Mounts / bind mounts. More info: https://aka.ms/vscode-remote/containers/volumes.
   "mounts": [
-    "source=${localEnv:HOME}/.ssh/id_25519,target=/home/vscode/.ssh/id_25519,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh/,type=bind,consistency=cached"
   ],
 
   // Use 'postCreateCommand' to run commands after the container is created.

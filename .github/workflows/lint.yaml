@@ -1,0 +1,23 @@
+name: Lint
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 11
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts
+      - run: pnpm install
+      - run: pnpm run lint
