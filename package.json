@@ -13,13 +13,17 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@iconify-vue/tabler": "^1.0.15",
     "@nuxt/eslint": "1.15.2",
+    "@nuxt/ui": "^4.8.0",
     "nuxt": "^4.4.6",
+    "tailwindcss": "^4.3.0",
     "vue": "^3.5.34",
     "vue-router": "^5.0.7"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.0.0",
+    "@iconify-json/tabler": "^1.2.35",
     "eslint-plugin-format": "^2.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.5",
