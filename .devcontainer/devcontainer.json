@@ -99,6 +99,11 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
 
+  // Mounts / bind mounts. More info: https://aka.ms/vscode-remote/containers/volumes.
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh/id_25519,target=/home/vscode/.ssh/id_25519,type=bind,consistency=cached"
+  ],
+
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "chmod +x ./.devcontainer/post-create-setup.sh && ./.devcontainer/post-create-setup.sh"
 
