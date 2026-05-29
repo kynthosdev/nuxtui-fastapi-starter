@@ -1,9 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@theme {
-  --font-sans: "Poppins", sans-serif;
+@theme static {
+  /* Fonts - using available Google Fonts that match originals */
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-body: "Noto Sans", system-ui, sans-serif;
 
+  /* Brand Colors */
+  --color-accent: #5b76fe;
+  --color-accent-pressed: #2a41b6;
+  --color-success: #00b473;
+  --color-muted: #555a6a;
+  --color-ring: #e0e2e8;
+  --color-border: #c7cad5;
+  --color-bg: #ffffff;
+  --color-fg: #1c1c1e;
+
+  /* Surface Colors */
+  --color-coral-light: #ffc6c6;
+  --color-coral-dark: #600000;
+  --color-teal-light: #c3faf5;
+  --color-teal-dark: #187574;
+  --color-orange-light: #ffe6cd;
+  --color-yellow-bg: #fff8e1;
+  --color-pink-surface: #fde0f0;
+  --color-red-surface: #fbd4d4;
+
+  /* Breakpoints */
   --breakpoint-3xl: 1920px;
   --breakpoint-4xl: 2560px;
   --breakpoint-5xl: 3840px;

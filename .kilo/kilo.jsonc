@@ -1,3 +1,17 @@
 {
-  "$schema": "https://app.kilo.ai/config.json"
+  "$schema": "https://app.kilo.ai/config.json",
+  "mcp": {
+    "nuxt": {
+      "type": "remote",
+      "url": "https://nuxt.com/mcp",
+      "enabled": true,
+      "timeout": 15000
+    },
+    "nuxtui": {
+      "type": "remote",
+      "url": "https://ui.nuxt.com/mcp",
+      "enabled": true,
+      "timeout": 15000
+    }
+  }
 }

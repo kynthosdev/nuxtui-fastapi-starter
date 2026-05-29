@@ -41,7 +41,7 @@ export default withNuxt(
           },
         ],
       },
-      ignores: ["**/*.md", "**/.kilo/**", "**/memory-bank/**"],
+      ignores: ["**/*.md", "**/.kilo/**/**", "**/memory-bank/**"],
     },
   ),
   {
