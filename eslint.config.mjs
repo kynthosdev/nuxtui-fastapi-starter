@@ -37,11 +37,11 @@ export default withNuxt(
           "error",
           {
             case: "kebabCase",
-            ignore: ["README.md"],
+            ignore: ["README.md", "AGENTS.md"],
           },
         ],
       },
-      ignores: ["**/*.md"],
+      ignores: ["**/*.md", "**/.kilo/**", "**/memory-bank/**"],
     },
   ),
   {
